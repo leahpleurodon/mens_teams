@@ -13,7 +13,7 @@ class PagesController < ApplicationController
     end
 
     def contact_us
-
+        render :contact_us
     end
 
     def blog

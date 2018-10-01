@@ -1,0 +1,41 @@
+body {
+  background-color: mistyrose;
+}
+
+h1 {
+  color: blue;
+}
+
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.ft14 {
+  font-size: 44px !important;
+  color: red;
+}
+.bg-blue {
+  background-color: #1b95e0 !important;
+  color: fffff;
+}
+
+i {
+  color: fffff !important;
+}
+
+.btn-facebook {
+  background: #3b5998;
+  border-radius: 0;
+  color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #263961;
+}
+.btn-facebook:link,
+.btn-facebook:visited {
+  color: #fff;
+}
+.btn-facebook:active,
+.btn-facebook:hover {
+  background: #263961;
+  color: #fff;
+}
