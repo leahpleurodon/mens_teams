@@ -9,7 +9,7 @@ class PagesController < ApplicationController
     end
 
     def resources
-
+        render :resources
     end
 
     def contact_us
