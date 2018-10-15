@@ -1,0 +1,40 @@
+#involved-image {
+	background-image: url("/get_involved.jpg");
+	background-position: top;
+	background-size: cover;
+	width: 100%;
+	height: 400px;
+}
+
+section.get-involved {
+	margin-top: 175px;
+	height: 100%;
+}
+
+.involved-main {
+	display: flex;
+}
+
+.involved-left {
+	background-color: pink;
+	height: 400px;
+	width: 100%;
+}
+
+.involved-right {
+	background-color: green;
+	height: 400px;
+	width: 100%;
+}
+
+.join-form form,
+.start-form form {
+	display: flex;
+	flex-direction: column;
+}
+
+.join-form input,
+.start-form input {
+	margin: 5px;
+	width: 60%;
+}
