@@ -26,6 +26,43 @@
     }
   ]
 
+  external_links = [
+    {
+      :type => "Men's Movements",
+      :title => "Movember",
+      :link => "https://au.movember.com/"  
+    },
+
+    {
+      :type => "Men's Support Services",
+      :title => "Beyond Blue",
+      :link => "https://www.beyondblue.org.au/"
+    },
+
+    {
+      :type => "Men's Support Services",
+      :title => "Men's Line",
+      :link => "https://mensline.org.au/"  
+    },
+
+    {
+      :type => "Apps",
+      :title => "Apps to Support Your Health",
+      :link => "https://au.reachout.com/tools-and-apps"
+    },
+
+    { 
+      :type => "News Stories",
+      :title => "Breakfast with Dads - How 600 volunteers stood in for 50 absent fathers",
+      :link => "https://www.menshealth.com/trending-news/a19546345/600-men-stand-for-absent-fathers-dallas-middle-school/"
+    },
+
+    {
+      :type => "News Stories",
+      :title => "Why Triple M’s Gus Worland started Gotcha4Life to Raise Men’s Mental Health Awareness",
+      :link => "https://www.news.com.au/lifestyle/health/mind/the-moment-that-shocked-triple-m-host-gus-worland/news-story/9258843fcb7b12e635a25169a4b73e47"
+    }
+  ]
 
 %>
 
@@ -33,7 +70,7 @@
 <h3> MEN'S TEAM - RESOURCES</h3>
 
 <%# renders quotes %>
-<% quotes.each_with_index do |quote, idx| %>
+<% quotes.each_with_index do | quote, idx | %>
   <article class="quote" id="quote-<%= idx+1 %>">
     <p> <%= quote[:content] %> </p>
     <% if quote[:author] %>
@@ -44,7 +81,7 @@
 
 
 <%# render tips %>
-<% tips.each_with_index do |tip, idx| %>
+<% tips.each_with_index do | tip, idx | %>
   <article class="tip" id="tip-<%= idx+1 %>">
     <h4> <%= tip[:title] %> </h4>
     <% tip[:content].each_with_index do |item, idx| %>
@@ -53,6 +90,14 @@
   </article>
 <% end %>
 
+<%# render external links %>
+<% external_links.each_with_index do | link, idx | %>
+  <article class="external-link" id="link-<%= idx+1 %>">
+    <h4> <%= link[:type]%> </h4>
+    <a href="<%=link[:link]%>"><%= link[:title]%> </a>
+  
+  </article>
 
+<% end %>
 
 
