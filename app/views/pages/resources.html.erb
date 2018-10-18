@@ -1,0 +1,69 @@
+<h3> MEN'S TEAM - RESOURCES</h3>
+
+<div class="resources-container">
+  <%# renders quotes %>
+  <% @quotes.each_with_index do | quote, idx | %>
+    <article class="quote" id="quote-<%= idx+1 %>">
+      <p> <%= quote[:content] %> </p>
+      <% if quote[:author] %>
+        <p>-<%= quote[:author] %></p>
+      <% end %>
+    </article>
+  <% end %>
+
+
+  <%# render tips %>
+  <% @tips.each_with_index do | tip, idx | %>
+    <article class="tip" id="tip-<%= idx+1 %>">
+      <h4> <%= tip[:title] %> </h4>
+      <% tip[:content].each_with_index do |item, idx| %>
+          <p> <%= idx+1 %>. <%= item %> </p>
+      <% end %>
+    </article>
+  <% end %>
+
+  <%# render external links %>
+  <% @external_links.each_with_index do | link, idx | %>
+    <article class="external-link" id="link-<%= idx+1 %>">
+      <h4> <%= link[:type]%> </h4>
+      <a href="<%=link[:link]%>"><%= link[:title]%> </a>
+    
+    </article>
+
+  <% end %>
+
+
+  <%# render centering statement %>
+  <article class="centering-statement" id="centering-stmnt">
+    <h4>Centering Statement</h4>
+    <p>
+      We have come together in this sacred circle to listen, to speak up and respect each others
+      point of view. To honour our past and present actions, our fears, our thoughts and feelings
+      in confidentiality.
+    </p>
+    <p>
+      We have come together to share and celebrate one another's victories, to bring comfort in
+      defeat and to give voice and witness to our hopes and dreams for the future- may we learn
+      from them and each other- moving forward with the team's support- always with dignity
+      and without judgement.
+    </p>
+    <p>
+      It is the intention of this team to be as open and honest with ourselves and each other as
+      possible. That we may inspire one another to find joy in our lives and create strong
+      foundations for a better tomorrow.
+    </p>
+    <p>
+      It is our intention to heal ourselves and in doing so create community where men can be
+      trusted. Where our sisterhood, our brotherhood, our children and our parents can
+      confidently rely upon us.
+    </p>
+    <p>
+      It is the intention of each member of this team to
+      be present with our emotions,
+      to be conscious with our words,
+      to be ready with our strength to assist those in need.
+    </p>
+    <p>That we may all live to our fullest potential</p>
+  </article>
+
+</div>
