@@ -5,7 +5,7 @@ class PagesController < ApplicationController
     end
 
     def about
-
+        render :about
     end
 
     def resources
