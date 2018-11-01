@@ -11,8 +11,20 @@ section.get-involved {
 	height: 100%;
 }
 
+.get-involved h1 {
+	text-align: center;
+}
+
 .involved-main {
 	display: flex;
+}
+
+.locations {
+	width: 100%;
+}
+
+.involved-main h2 {
+	text-align: center;
 }
 
 .involved-left {
@@ -27,14 +39,27 @@ section.get-involved {
 	width: 100%;
 }
 
+.involved-left,
+.involved-right {
+	padding: 10px 20px;
+}
+
 .join-form form,
 .start-form form {
 	display: flex;
 	flex-direction: column;
+	width: 80%;
 }
 
 .join-form input,
 .start-form input {
 	margin: 5px;
-	width: 60%;
+	width: 100%;
+
+}
+
+.join-form,
+.start-form {
+	display: flex;
+	justify-content: center;
 }
