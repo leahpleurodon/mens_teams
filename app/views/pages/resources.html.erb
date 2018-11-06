@@ -11,28 +11,6 @@
     </article>
   <% end %>
 
-
-  <%# render tips %>
-  <% @tips.each_with_index do | tip, idx | %>
-    <article class="tip" id="tip-<%= idx+1 %>">
-      <h4> <%= tip[:title] %> </h4>
-      <% tip[:content].each_with_index do |item, idx| %>
-          <p> <%= idx+1 %>. <%= item %> </p>
-      <% end %>
-    </article>
-  <% end %>
-
-  <%# render external links %>
-  <% @external_links.each_with_index do | link, idx | %>
-    <article class="external-link" id="link-<%= idx+1 %>">
-      <h4> <%= link[:type]%> </h4>
-      <a href="<%=link[:link]%>"><%= link[:title]%> </a>
-    
-    </article>
-
-  <% end %>
-
-
   <%# render centering statement %>
   <article class="centering-statement" id="centering-stmnt">
     <h4>Centering Statement</h4>
@@ -65,5 +43,28 @@
     </p>
     <p>That we may all live to our fullest potential</p>
   </article>
+
+  <%# render tips %>
+  <% @tips.each_with_index do | tip, idx | %>
+    <article class="tip" id="tip-<%= idx+1 %>">
+      <h4> <%= tip[:title] %> </h4>
+      <% tip[:content].each_with_index do |item, idx| %>
+          <p> <%= idx+1 %>. <%= item %> </p>
+      <% end %>
+    </article>
+  <% end %>
+
+  <%# render external links %>
+  <% @external_links.each_with_index do | link, idx | %>
+    <article class="external-link" id="link-<%= idx+1 %>">
+      <h4> <%= link[:type]%> </h4>
+      <a href="<%=link[:link]%>"><%= link[:title]%> </a>
+    
+    </article>
+
+  <% end %>
+
+
+
 
 </div>

@@ -1,0 +1,35 @@
+.resources-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  margin: 100px 1rem;
+
+  @media(min-width: 50em){
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+.resources-container article {
+  border: 1px solid blueviolet;
+  padding: .5rem;
+}
+
+.resources-container {
+  .centering-statement{
+    grid-column: span 2;
+  }
+
+  .quote{
+    padding: 1rem;
+  }
+
+  #quote-5 {
+    grid-column: span 2;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+} 
